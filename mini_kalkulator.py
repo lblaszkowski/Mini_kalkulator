@@ -4,6 +4,9 @@ dzialanie = input('Wybierz liczbę  z menu: ' '\n'
                   '3 - mnozenie '  '\n'
                   '4 - dzielenie '  '\n'
                   '5 - potegowanie '  '\n'
+                  '6 - dzielenie modulo '  '\n'
+
+
 )
 
 liczba_1 = float(input("Podaj pierwszą liczbę: "))
@@ -17,8 +20,10 @@ elif dzialanie == 3:
     wynik = liczba_1 * liczba_2
 elif dzialanie == 4:
     wynik = liczba_1 / liczba_2
-else:
+elif dzialanie == 5:
     wynik = liczba_1 ** liczba_2
+else:
+    wynik = liczba_1 % liczba_2
 
 print(wynik)
 
